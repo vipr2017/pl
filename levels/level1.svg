@@ -77,17 +77,6 @@
        height="123.73333"
        width="82.438095"
        inkscape:label="#image2992" />
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="415.71429"
-       y="298.80542"
-       id="label"
-       inkscape:label="#text20"><tspan
-         sodipodi:role="line"
-         id="tspan18"
-         x="415.71429"
-         y="298.80542">label</tspan></text>
     <rect
        style="opacity:1;fill:#d40000;fill-opacity:1;stroke:none;stroke-opacity:1"
        id="conbox"
@@ -162,5 +151,24 @@
    id="tspan33">a<tspan
    style="font-size:65%;baseline-shift:super"
    id="tspan35">2</tspan></tspan>a</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="-302.85715"
+       y="446.13336"
+       id="aaDim"
+       inkscape:label="#text36"><tspan
+         sodipodi:role="line"
+         id="tspan34"
+         x="-302.85715"
+         y="446.13336">aaDim</tspan></text>
+    <rect
+       style="opacity:1;fill:#241c1c;fill-opacity:1;stroke:none;stroke-opacity:1"
+       id="dt"
+       width="134.28572"
+       height="65.714287"
+       x="638.57141"
+       y="68.990501"
+       inkscape:label="#rect35" />
   </g>
 </svg>

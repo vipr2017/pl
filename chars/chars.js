@@ -1,3 +1,70 @@
+function aaDim(level, svgObject) {
+
+this.type = "aaDim";
+this.nr = this.count;
+aaDim.prototype.count++;
+
+C.call(this, level, svgObject);
+
+alert("aaDim");
+
+var width = window.innerWidth;
+var height = window.innerHeight;
+
+var svg2 = document.getElementById("svg2");
+var svgWidth = svg2.getAttribute("width");
+var svgHeight = svg2.getAttribute("height");
+
+// Adjust svg width and height
+
+svg2.setAttribute("width", width);
+svg2.setAttribute("height", height);
+
+
+var difX = width/svgWidth;
+var difY = height/svgHeight;
+
+if(difX < difY) {
+
+	var scaleF = difX;
+
+} else {
+
+	var scaleF = difY;
+
+}
+
+var layer1 = document.getElementById("layer1");
+var layer2 = document.getElementById("layer2");
+var layer3 = document.getElementById("layer3");
+var layer4 = document.getElementById("layer4");
+var layer5 = document.getElementById("layer5");
+
+// Adjust svg scale
+
+try {
+
+	layer1.setAttribute("transform", "scale(" + scaleF + " " + scaleF + ")");
+	layer2.setAttribute("transform", "scale(" + scaleF + " " + scaleF + ")");
+	layer3.setAttribute("transform", "scale(" + scaleF + " " + scaleF + ")");
+	layer4.setAttribute("transform", "scale(" + scaleF + " " + scaleF + ")");
+	layer5.setAttribute("transform", "scale(" + scaleF + " " + scaleF + ")");
+	
+} catch(e) {}
+
+this.level.scaleX = scaleF;
+this.level.scaleY = scaleF;
+
+$(this.svgObject).hide();
+
+
+
+}
+
+aaDim.prototype = Object.create(C.prototype);
+aaDim.prototype.constructor = aaDim;
+aaDim.prototype.count = 0;
+
 function conbox(level, svgObject) {
 
 this.type = "conbox";
@@ -87,6 +154,22 @@ dropje.prototype.drop = function(o)
 
 alert(o.id);
 }
+
+function dt(level, svgObject) {
+
+this.type = "dt";
+this.nr = this.count;
+dt.prototype.count++;
+
+C.call(this, level, svgObject);
+
+this.svgObject.style.cursor="pointer";
+this.drag=true;
+}
+
+dt.prototype = Object.create(C.prototype);
+dt.prototype.constructor = dt;
+dt.prototype.count = 0;
 
 function label(level, svgObject) {
 

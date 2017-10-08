@@ -290,8 +290,8 @@ C.prototype.onTouchMove = function(event) {
 			this.prevPosX = event.targetTouches[0].pageX;
 			this.prevPosY = event.targetTouches[0].pageY;
 			
-			this.transXCum += divX;
-			this.transYCum += divY;
+			this.transXCum += (divX/this.level.scaleX);
+			this.transYCum += (divY/this.level.scaleY);
 			
 		}		
 	}
@@ -314,12 +314,13 @@ C.prototype.onTouchEnd = function(event) {
 	
 	}
 	
+	//alert(this.drag);
 	if(!this.drag) { return false; }
 
 	this.firstDragMove = true;
 	
-	var x = this.prevPosX;
-	var y = this.prevPosY;
+	var x = this.prevPosX/this.level.scaleX;
+	var y = this.prevPosY/this.level.scaleY;
 	
 	if(x.toString() != "NaN") {
 	
@@ -412,8 +413,8 @@ C.prototype.onMouseMove = function(event) {
 			this.prevPosX = event.pageX;
 			this.prevPosY = event.pageY;
 			
-			this.transXCum += divX;
-			this.transYCum += divY;
+			this.transXCum += (divX/this.level.scaleX);
+			this.transYCum += (divY/this.level.scaleY);
 			
 		}		
 	}
