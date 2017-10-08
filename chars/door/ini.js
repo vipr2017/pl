@@ -1,0 +1,1 @@
+this.svgObject.style.cursor="pointer";
